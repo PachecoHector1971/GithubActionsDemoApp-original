@@ -34,7 +34,7 @@ jobs:
           dotnet-version: 8.0.x
       
       - name: Instalar el EF Core CLI
-        uses: dotnet tool install --global dotnet-ef
+        run: dotnet tool install --global dotnet-ef
         
       - name: Obteninedo las dependencias
         run: dotnet restore
