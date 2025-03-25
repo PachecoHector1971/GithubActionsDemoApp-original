@@ -24,9 +24,6 @@ jobs:
         with:
           dotnet-version: ${{env.VERSION_DOTNET}}
       
-      - name: Instalar el EF Core CLI
-        run: dotnet tool install --global dotnet-ef
-        
       - name: Obteninedo las dependencias
         run: dotnet restore
 
